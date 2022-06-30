@@ -1,0 +1,151 @@
+:root {
+   --white-primary: #FFFFFF;
+   --gray-secondary: #C0C0C0;
+   --btn-primary: #167BF7;
+   --btn-primary-hover: #4096ff; 
+   --background: #00030C;
+   --font-primary: 'Inter';  
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--background);
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+.principal {
+    background-image: url(img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container_titulo {
+    font-size: 28px;
+    font-weight: 700px;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background: var(--btn-primary);
+    color: var(--white-primary);
+    padding: 1em;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background: transparent;
+    border: 2px solid var(--white-primary);
+}
+
+.container_aviso {
+    font-size: 12px;
+    text-align: center;
+    color: var(--gray-secondary);
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.descricao__titulo {
+    font-weight: 700px;
+    font-size: 48px;
+    color: var(--white-primary);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--gray-secondary);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--white-primary)
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista_item {
+    font-size: 32px;
+    color: var(--white-primary);
+}
+
+.rodape {
+    text-align: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 2em 0;
+}
+
+.lista__link a {
+    color: var(--white-primary);
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.rodape__copyright {
+    color: var(--gray-secondary);
+    font-size: 14px;
+    margin: 0 0.5em 5em;
+}
+
+.lista__link a:hover {
+    color: var(--btn-primary);
+}
+
+.container__botao:hover {
+    background: var(--btn-primary-hover);
+    color: var(--background);
+}
